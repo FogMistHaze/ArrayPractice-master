@@ -126,6 +126,13 @@ namespace ArrayPractice
             {
                 label4.Visible = false;
             }
+
+            if((label1.Visible=false)
+                &&(label3.Visible=false)
+                &&(label4.Visible=false))
+            {
+                timer1.Enabled = false;
+            }
         }
 
         private void scoreLabel_Click(object sender, EventArgs e)
