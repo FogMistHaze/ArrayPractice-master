@@ -24,6 +24,12 @@ namespace ArrayPractice
 
             label1.Left = rand.Next(ClientSize.Width - label1.Width);
             label1.Top = rand.Next(ClientSize.Height - label1.Height);
+
+            label3.Left = rand.Next(ClientSize.Width - label1.Width);
+            label3.Top = rand.Next(ClientSize.Height - label1.Height);
+
+            label4.Left = rand.Next(ClientSize.Width - label1.Width);
+            label4.Top = rand.Next(ClientSize.Height - label1.Height);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -60,6 +66,82 @@ namespace ArrayPractice
             {
                 timer1.Enabled = false;
             }
+
+            label3.Left += vx;
+            label3.Top += vy;
+
+            if (label3.Left < 0)
+            {
+                vx = Math.Abs(vx);
+            }
+            if (label3.Top < 0)
+            {
+                vy = Math.Abs(vy);
+            }
+            if (label3.Right > ClientSize.Width)
+            {
+                vx = -Math.Abs(vx);
+            }
+            if (label3.Bottom > ClientSize.Height)
+            {
+                vy = -Math.Abs(vy);
+            }
+
+            if ((fpos.X >= label3.Left)
+                && (fpos.X < label3.Right)
+                && (fpos.Y >= label3.Top)
+                && (fpos.Y < label3.Bottom))
+            {
+                timer1.Enabled = false;
+            }
+
+            label4.Left += vx;
+            label4.Top += vy;
+
+            if (label4.Left < 0)
+            {
+                vx = Math.Abs(vx);
+            }
+            if (label4.Top < 0)
+            {
+                vy = Math.Abs(vy);
+            }
+            if (label4.Right > ClientSize.Width)
+            {
+                vx = -Math.Abs(vx);
+            }
+            if (label4.Bottom > ClientSize.Height)
+            {
+                vy = -Math.Abs(vy);
+            }
+
+            if ((fpos.X >= label4.Left)
+                && (fpos.X < label4.Right)
+                && (fpos.Y >= label4.Top)
+                && (fpos.Y < label4.Bottom))
+            {
+                timer1.Enabled = false;
+            }
+        }
+
+        private void scoreLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
