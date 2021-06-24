@@ -16,6 +16,10 @@ namespace ArrayPractice
 
         int vx = rand.Next(-20, 21);
         int vy = rand.Next(-20, 21);
+        int vx3 = rand.Next(-20, 21);
+        int vy3= rand.Next(-20, 21);
+        int vx4 = rand.Next(-20, 21);
+        int vy4 = rand.Next(-20, 21);
         int score = 100;
 
         public Form1()
@@ -67,24 +71,24 @@ namespace ArrayPractice
                 timer1.Enabled = false;
             }
 
-            label3.Left += vx;
-            label3.Top += vy;
+            label3.Left += vx3;
+            label3.Top += vy3;
 
             if (label3.Left < 0)
             {
-                vx = Math.Abs(vx);
+                vx3 = Math.Abs(vx);
             }
             if (label3.Top < 0)
             {
-                vy = Math.Abs(vy);
+                vy3 = Math.Abs(vy);
             }
             if (label3.Right > ClientSize.Width)
             {
-                vx = -Math.Abs(vx);
+                vx3 = -Math.Abs(vx);
             }
             if (label3.Bottom > ClientSize.Height)
             {
-                vy = -Math.Abs(vy);
+                vy3 = -Math.Abs(vy);
             }
 
             if ((fpos.X >= label3.Left)
@@ -95,24 +99,24 @@ namespace ArrayPractice
                 timer1.Enabled = false;
             }
 
-            label4.Left += vx;
-            label4.Top += vy;
+            label4.Left += vx4;
+            label4.Top += vy4;
 
             if (label4.Left < 0)
             {
-                vx = Math.Abs(vx);
+                vx4 = Math.Abs(vx);
             }
             if (label4.Top < 0)
             {
-                vy = Math.Abs(vy);
+                vy4 = Math.Abs(vy);
             }
             if (label4.Right > ClientSize.Width)
             {
-                vx = -Math.Abs(vx);
+                vx4 = -Math.Abs(vx);
             }
             if (label4.Bottom > ClientSize.Height)
             {
-                vy = -Math.Abs(vy);
+                vy4 = -Math.Abs(vy);
             }
 
             if ((fpos.X >= label4.Left)
