@@ -14,10 +14,11 @@ namespace ArrayPractice
     {
         static Random rand = new Random();
 
-        int[] vx = new int[100];
-        int[] vy = new int[100];
+        const int LabelMax = 10;
+        int[] vx = new int[LabelMax];
+        int[] vy = new int[LabelMax];
 
-        Label[] labels = new Label[100];
+        Label[] labels = new Label[LabelMax];
 
         //int vx = rand.Next(-20, 21);
         //int vy = rand.Next(-20, 21);
@@ -32,7 +33,7 @@ namespace ArrayPractice
         {
             InitializeComponent();
 
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < LabelMax; i++)
             {
                 vx[i] = rand.Next(-20, 21);
                 vy[i] = rand.Next(-20, 21);
@@ -77,7 +78,7 @@ namespace ArrayPractice
 
             Point fpos = PointToClient(MousePosition);
 
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < LabelMax; i++)
             {
                 labels[i].Left += vx[i];
                 labels[i].Top += vy[i];
@@ -216,13 +217,10 @@ namespace ArrayPractice
             for (int i = 0; i < 10; i++)
             {
                 if(i==2)
-                {
                     continue;
-                }
                 if(i==5)
-                {
                     break;
-                }
+
                 MessageBox.Show(i.ToString());
             }
         }
