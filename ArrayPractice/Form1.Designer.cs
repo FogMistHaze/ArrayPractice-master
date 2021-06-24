@@ -30,26 +30,13 @@ namespace ArrayPractice
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.scoreLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Enabled = false;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(186, 123);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "( 一一)";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // timer1
             // 
@@ -102,31 +89,41 @@ namespace ArrayPractice
             this.label4.TabIndex = 4;
             this.label4.Text = "(・ω・)";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(199, 125);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 30);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "(・ω・)";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(464, 281);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.scoreLabel);
-            this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "ArrayPractice";
+            this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label scoreLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1;
     }
 }
 
