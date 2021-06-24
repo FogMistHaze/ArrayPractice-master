@@ -45,6 +45,11 @@ namespace ArrayPractice
 
                 labels[i].Left = rand.Next(ClientSize.Width - labels[i].Width);
                 labels[i].Top = rand.Next(ClientSize.Height - labels[i].Height);
+
+                if (labels[i].Visible == false)
+                {
+                    timer1.Enabled = false;
+                }
             }
 
             /*
@@ -106,7 +111,7 @@ namespace ArrayPractice
                 && (fpos.Y < labels[i].Bottom))
                 {
                     labels[i].Visible = false;
-                }
+                }               
             }
 
             /*
@@ -200,13 +205,14 @@ namespace ArrayPractice
             }
             */
 
-
+            /*
             if((label1.Visible==false)
                 &&(label3.Visible==false)
                 &&(label4.Visible==false))
             {
                 timer1.Enabled = false;
             }
+            */
         }
 
 
