@@ -42,12 +42,13 @@ namespace ArrayPractice
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Enabled = false;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(186, 123);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 30);
+            this.label1.Size = new System.Drawing.Size(77, 30);
             this.label1.TabIndex = 0;
-            this.label1.Text = "(・ω・)";
+            this.label1.Text = "( 一一)";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // timer1

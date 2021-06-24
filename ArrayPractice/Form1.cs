@@ -16,10 +16,10 @@ namespace ArrayPractice
 
         int vx = rand.Next(-20, 21);
         int vy = rand.Next(-20, 21);
-        int vx3 = rand.Next(-40, 21);
-        int vy3= rand.Next(-40, 21);
-        int vx4 = rand.Next(-5, 21);
-        int vy4 = rand.Next(-5, 21);
+        int vx3 = rand.Next(-20, 21);
+        int vy3= rand.Next(-20, 21);
+        int vx4 = rand.Next(-20, 21);
+        int vy4 = rand.Next(-20, 21);
         int score = 100;
 
         public Form1()
